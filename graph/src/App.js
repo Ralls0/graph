@@ -6,11 +6,19 @@ import { Connection } from "./Components/Connection";
 import { getConnectorPointsTo, getConnectorPointsFrom } from "./utils";
 import API from "./API";
 
+const nunRand = Math.floor(Math.random() * (5 + 1));
 const colorHex = ["#7CD855", "#FDC921", "#5FFDFF", "#F453A3", "#B43C29"];
+const imgs = [
+  "img/yuri-1.png",
+  "img/yuri-2.png",
+  "img/yuri-3.png",
+  "img/yuri-4.png",
+  "img/yuri-5.png",
+];
 const fill = "#2F3339";
 const podRadius = 20;
 const opacity = 1;
-const stroke = colorHex[Math.floor(Math.random() * (4 + 1))];
+const stroke = colorHex[nunRand];
 const strokeWidth = 5;
 
 function App() {
@@ -106,7 +114,7 @@ function App() {
   return (
     <>
       <img
-        src="img/yuri-faq.png"
+        src={imgs[nunRand]}
         alt="img"
         width={window.innerHeight / 3}
         height={window.innerHeight / 3}
