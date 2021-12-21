@@ -6,7 +6,7 @@ import { Connection } from "./Components/Connection";
 import { getConnectorPointsTo, getConnectorPointsFrom } from "./utils";
 import API from "./API";
 
-const nunRand = Math.floor(Math.random() * (5 + 1));
+const nunRand = Math.floor(Math.random() * 5);
 const colorHex = ["#7CD855", "#FDC921", "#5FFDFF", "#F453A3", "#B43C29"];
 const imgs = [
   "img/yuri-1.png",

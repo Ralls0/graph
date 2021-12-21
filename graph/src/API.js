@@ -7,7 +7,7 @@ async function getAllPods() {
   let podJson = [
     {
       id: "pod-bastion-operator-56dd44cb8c-2wqcj",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "bastion-operator-56dd44cb8c-2wqcj",
       ip: "172.16.100.99",
@@ -15,7 +15,7 @@ async function getAllPods() {
     },
     {
       id: "pod-bastion-operator-56dd44c000-2wqcj",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "bastion-operator-56dd44c000-2wqcj",
       ip: "172.16.100.230",
@@ -23,7 +23,7 @@ async function getAllPods() {
     },
     {
       id: "pod-bastion-operator-56dd44c111-2wqcj",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "bastion-operator-56dd44c111-2wqcj",
       ip: "172.16.101.2",
@@ -31,7 +31,7 @@ async function getAllPods() {
     },
     {
       id: "pod-frontend-app-65f6447b95-lqgfq",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "frontend-app-65f6447b95-lqgfq",
       ip: "172.16.101.22",
@@ -39,7 +39,7 @@ async function getAllPods() {
     },
     {
       id: "pod-frontend-app-1001047b95-lqgfq",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "frontend-app-1001047b95-lqgfq",
       ip: "172.16.101.25",
@@ -47,7 +47,7 @@ async function getAllPods() {
     },
     {
       id: "pod-frontend-app-90f6447b95-lqgfq",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "frontend-app-90f6447b95-lqgfq",
       ip: "172.16.101.27",
@@ -55,7 +55,7 @@ async function getAllPods() {
     },
     {
       id: "pod-backend-app-90f6447b95-lqgfq",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "backend-app-90f6447b95-lqgfq",
       ip: "172.16.101.199",
@@ -63,7 +63,7 @@ async function getAllPods() {
     },
     {
       id: "pod-backend-app-90f6447b95-fffff",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "backend-app-90f6447b95-fffff",
       ip: "172.16.101.149",
@@ -71,7 +71,7 @@ async function getAllPods() {
     },
     {
       id: "pod-backend-app-90f6447b95-aaaaa",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "backend-app-90f6447b95-aaaaa",
       ip: "172.16.101.129",
@@ -79,7 +79,7 @@ async function getAllPods() {
     },
     {
       id: "pod-image-list-88df45c968-wj2gc",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "image-list-88df45c968-wj2gc",
       ip: "172.16.101.207",
@@ -92,7 +92,7 @@ async function getAllServices() {
   let serviceJson = [
     {
       id: "service-bastion-operator",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       serviceName: "bastion-operator",
       ip: "10.105.36.80",
@@ -100,7 +100,7 @@ async function getAllServices() {
     },
     {
       id: "service-frontend-app",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       serviceName: "frontend-app",
       ip: "10.105.36.88",
@@ -108,7 +108,7 @@ async function getAllServices() {
     },
     {
       id: "service-backend-app",
-      x: Math.floor(Math.random() * (window.innerWidth / 3) * 1.5),
+      x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       serviceName: "backend-app",
       ip: "10.105.36.98",
