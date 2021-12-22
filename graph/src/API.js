@@ -78,10 +78,10 @@ async function getAllPods() {
       parentServiceId: "service-backend-app",
     },
     {
-      id: "pod-image-list-88df45c968-wj2gc",
+      id: "pod-database-88df45c968-wj2gc",
       x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
-      podName: "image-list-88df45c968-wj2gc",
+      podName: "database-88df45c968-wj2gc",
       ip: "172.16.101.207",
     },
   ];
@@ -166,11 +166,11 @@ function getAllConnections(pods, services) {
           return s.id === "service-backend-app";
         })[0],
         pods.filter((p) => {
-          return p.id === "pod-image-list-88df45c968-wj2gc";
+          return p.id === "pod-database-88df45c968-wj2gc";
         })[0]
       ),
       from: "service-backend-app",
-      to: "pod-image-list-88df45c968-wj2gc",
+      to: "pod-database-88df45c968-wj2gc",
     },
   ];
   return connJson.map((conn) => ConnectionObj.from(conn));
