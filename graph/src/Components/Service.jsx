@@ -81,7 +81,7 @@ export function Service(props) {
         ))}
         <Text
           x={-(name.length * 4)}
-          y={pods.length * radius - 30}
+          y={3 * radius - 30}
           text={name}
           fontSize={18}
           align="center"
@@ -89,7 +89,7 @@ export function Service(props) {
         />
         <Text
           x={-(name.length * 4)}
-          y={pods.length * radius - 12}
+          y={3 * radius - 12}
           text={ip}
           fontSize={18}
           align="center"
@@ -97,7 +97,7 @@ export function Service(props) {
         />
         <Text
           x={-(name.length * 4)}
-          y={pods.length * radius + 6}
+          y={3 * radius + 6}
           text={eip}
           fontSize={18}
           align="center"

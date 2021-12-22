@@ -38,14 +38,6 @@ async function getAllPods() {
       parentServiceId: "service-frontend-app",
     },
     {
-      id: "pod-frontend-app-1001047b95-lqgfq",
-      x: Math.floor(Math.random() * window.innerWidth),
-      y: Math.floor((Math.random() * window.innerHeight) / 2.5),
-      podName: "frontend-app-1001047b95-lqgfq",
-      ip: "172.16.101.25",
-      parentServiceId: "service-frontend-app",
-    },
-    {
       id: "pod-frontend-app-90f6447b95-lqgfq",
       x: Math.floor(Math.random() * window.innerWidth),
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
@@ -59,14 +51,6 @@ async function getAllPods() {
       y: Math.floor((Math.random() * window.innerHeight) / 2.5),
       podName: "backend-app-90f6447b95-lqgfq",
       ip: "172.16.101.199",
-      parentServiceId: "service-backend-app",
-    },
-    {
-      id: "pod-backend-app-90f6447b95-fffff",
-      x: Math.floor(Math.random() * window.innerWidth),
-      y: Math.floor((Math.random() * window.innerHeight) / 2.5),
-      podName: "backend-app-90f6447b95-fffff",
-      ip: "172.16.101.149",
       parentServiceId: "service-backend-app",
     },
     {
