@@ -18,7 +18,7 @@ RUN yarn build
 FROM nginx:1.19
 
 ## Copy the different files
-COPY --chown=nginx:nginx --from=builder /tmp/frontend/build /usr/share/nginx/html/
+COPY --chown=nginx:nginx --from=builder /tmp/frontend/build /usr/share/nginx/html
 COPY --chown=nginx:nginx nginx.conf /etc/nginx/conf.d/default.conf
 
 ## Add permissions for the nginx user
