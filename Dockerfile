@@ -26,6 +26,8 @@ RUN chown -R nginx:nginx /usr/share/nginx/html && \
     chown -R nginx:nginx /var/log/nginx && \
     chown -R nginx:nginx /etc/nginx/conf.d && \
     touch /var/run/nginx.pid && \
-    chown -R nginx:nginx /var/run/nginx.pid
+    chown -R nginx:nginx /var/run/nginx.pid && \
+    chmod -R 777 /var/log/nginx /var/cache/nginx/ && \
+    chmod 644 /etc/nginx/*
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
